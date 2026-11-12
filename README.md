@@ -52,3 +52,15 @@ test/                         # unit and widget tests
 docs/                         # report, screenshots, architecture, guides
 ```
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for details.
+
+## Tech stack
+Flutter · Dart · Material 3 · CustomPainter · shared_preferences · flutter_test · GitHub Actions
+
+## Project report
+[docs/SmartCampusNavigator_Flutter_Project_Report.pdf](docs/SmartCampusNavigator_Flutter_Project_Report.pdf)
+
+## Author
+**Arige Navya** (24AG1A0503) – B.Tech CSE, ACE Engineering College, Hyderabad
+
+## License
+[MIT](LICENSE)
