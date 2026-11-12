@@ -21,3 +21,34 @@ step-by-step walking directions.
 | Directions | Directions (2) | Saved | Empty state | Dark mode |
 |---|---|---|---|---|
 | ![](docs/screenshots/route.png) | ![](docs/screenshots/route2.png) | ![](docs/screenshots/saved.png) | ![](docs/screenshots/empty.png) | ![](docs/screenshots/dark.png) |
+
+## Getting started
+```bash
+git clone https://github.com/navyaarige098-del/Smart-Campus-Navigator.git
+cd Smart-Campus-Navigator
+flutter create . --platforms=android,ios,web   # generates platform folders once
+flutter pub get
+flutter run            # or: flutter run -d chrome
+```
+
+## Running tests
+```bash
+flutter analyze
+flutter test
+```
+
+## Project structure
+```
+lib/
+├── main.dart                 # app entry, light/dark theme
+├── models/place.dart         # Place, PlaceCategory, Building
+├── data/campus_data.dart     # junctions, roads, buildings, places
+├── services/route_service.dart    # Dijkstra shortest path + directions
+├── services/storage_service.dart  # shared_preferences
+├── state/campus_controller.dart   # ChangeNotifier
+├── widgets/                  # campus_map, place_tile
+└── screens/                  # home, map, places, detail, directions, saved
+test/                         # unit and widget tests
+docs/                         # report, screenshots, architecture, guides
+```
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for details.
