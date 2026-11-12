@@ -4,6 +4,8 @@ A Flutter app that helps students and visitors find classrooms, labs, department
 libraries and offices on a college campus using an offline digital map and
 step-by-step walking directions.
 
+![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter) ![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart) ![License: MIT](https://img.shields.io/badge/License-MIT-green)
+
 ## Features
 - Search places by name, room number or keyword; filter by category
 - Interactive campus map (zoom/pan, tap a building to see what is inside)
@@ -11,21 +13,11 @@ step-by-step walking directions.
 - Place details: building, floor, room, timings
 - Saved places and recently viewed (stored on device), light/dark theme
 
-## Run
-```bash
-flutter create . --platforms=android,ios,web   # generates platform folders once
-flutter pub get
-flutter test
-flutter run
-```
-
 ## Screenshots
-| Home | Map | Directions | Dark mode |
-|---|---|---|---|
-| ![](docs/screenshots/home.png) | ![](docs/screenshots/map.png) | ![](docs/screenshots/route.png) | ![](docs/screenshots/dark.png) |
+| Home | All places | Search | Campus map | Place details |
+|---|---|---|---|---|
+| ![](docs/screenshots/home.png) | ![](docs/screenshots/places.png) | ![](docs/screenshots/search.png) | ![](docs/screenshots/map.png) | ![](docs/screenshots/detail.png) |
 
-## Project report
-See [docs/SmartCampusNavigator_Flutter_Project_Report.pdf](docs/SmartCampusNavigator_Flutter_Project_Report.pdf).
-
-## Author
-Arige Navya (24AG1A0503) – B.Tech CSE, ACE Engineering College
+| Directions | Directions (2) | Saved | Empty state | Dark mode |
+|---|---|---|---|---|
+| ![](docs/screenshots/route.png) | ![](docs/screenshots/route2.png) | ![](docs/screenshots/saved.png) | ![](docs/screenshots/empty.png) | ![](docs/screenshots/dark.png) |
