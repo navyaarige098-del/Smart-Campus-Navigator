@@ -10,4 +10,5 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze --no-fatal-infos
       - run: flutter test
+      - run: flutter create . --platforms=web
       - run: flutter build web
