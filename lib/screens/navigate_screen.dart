@@ -62,7 +62,7 @@ class _NavigateScreenState extends State<NavigateScreen> {
 
   Widget _picker(String label, IconData icon, Color color, Place value, ValueChanged<Place> onChanged) {
     return DropdownButtonFormField<Place>(
-      value: value,
+      initialValue: value,
       isExpanded: true,
       decoration: InputDecoration(labelText: label, prefixIcon: Icon(icon, color: color), border: const OutlineInputBorder()),
       items: [for (final p in CampusData.places) DropdownMenuItem(value: p, child: Text(p.name))],
